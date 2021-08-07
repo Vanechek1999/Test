@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+    <div class="header container">
+        <div class="header_content">
+            <div class="header_content-logo">
+                <img src="assets/img/logo.svg" alt="Логотип">
+                <div class="logo_title">МАГАЗИН ИНСТРУМЕНТА</div>
+            </div>
+            <div class="header_content-inner">
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                            <li><a href="Каталог инструментов">Каталог инструментов</a></li>
+                            <li><a href="Всё для сада">Всё для сада</a></li>
+                            <li><a href="Электрика">Электрика</a></li>
+                            <li><a href="Доставка">Доставка</a></li>
+                            <li><a href="Оплата">Оплата</a></li>
+                            <li><a href="О нас">О нас</a></li>
+                        </ul>
+                    </nav>
+                    <div class="authorization">
+                        <div class="sign_in">Вход</div>
+                        <div class="sign_up">Регистрация</div>
+                    </div>
+                </div>
+                <div class="header_body">
+                    <div class="banner"></div>
+                    <div class="filter_products">
+                        <ul>
+                            <li>
+                                <a href="Корзина">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="18" viewBox="0 0 19 18">
+                                    <image id="cart" width="19" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAASCAYAAAC5DOVpAAAABHNCSVQICAgIfAhkiAAAAcVJREFUOE+d1E0opVEcx/HrpS6a8jJNIYvxWpRmRVmQKGTKmvK2s7CZkpSNrJTFjY3ZiCJkZmPFQqTE7EQhIS41g4YoIS8zfH/633rc7nPJqU//e89znt859znnuREej6cXbRhDI97dIrjzP9aRj0RcvDdNYeOos4Bf1J/YxRb8uH9ruMLU0vARi4hFtPX/o+5jGzsO6jvAnXOiQFigb4AP5ShAJvQMv+EH0pGDeBv8SP1tk+1RZ4LDvtC5aoHz1M82WBPou5omrEYLUpCMDniDwzR4GeqftJu7qAuYgH5WBZrwFZd4sOuRocKauTiME7v5EzXGgsOVyVBhcdyhZ6Hz14MyzEHPzI8k/EUtZtGJdpSECtPsfahBFqJwBj2X77Y07ey0XWul+tDmFpbHxQ004I+F67isIQPaKC90wLvRj0e3MPUfQudPTQ9aZ0tHIFB1qJdwY2Oedy1Uy6VzE9o1/ZxTl3Evut3CPtgKbt8YdMW4KrcwzZgN7ViqBerVCm76Y9A5O4YvXJhu1AEuwgoK4Qys5/uI9VVS58OFJTDgHAsotRUeOZY2yme9wxo3hM7XVjbIIG2CXi2txNmK+TKFa1Rh4wkk0GVGFFACoAAAAABJRU5ErkJggg=="/>
+                                </svg>
+                                </a> <span class="product_count">3 шт.</span><span> / </span><span class="sum_of-price">17 250 р.</span>
+                            </li>
+                            <li>
+                                <a href="Избранное">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="18" viewBox="0 0 15 15">
+                                    <image id="star" width="15" height="15" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABHNCSVQICAgIfAhkiAAAAQdJREFUKFNjZMAPuIDS33ApYcSj1xYotwqIlYD4OzZ1+DRvA2rwBOJMIJ5BimZ9oOILUA13gbQGEP9BNwCXzcuACiORFIPYK7BpFgEK+gCxOhSrAWktIEY2GBRoV4D4JhDfAuKrQLwRpMAGiPcBMSuewEOXAnnFAGZ6MJADClkmIgx4ClRjB8T3kJ0WDRRYRMAAkEYHIL4DsgQ9wMqBYh14bNcEyt2AyaNrLgZK9ODRDApUUICBAbrmeUCxRDyaA4FyG3BpPgGUMIdKngPSG4E4F4hB0QkCNUDcikvzR6DEB6iipUD6HxDzA3ElEOcD8RogjsWlORQosQWIsWUEOaC4IhAfhGkGAGeUKx4sB79IAAAAAElFTkSuQmCC"/>
+                                </svg>
+                               <span>Избранное(7)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="К сравнению">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="18" viewBox="0 0 18 16">
+                                    <image id="balance" width="18" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAQCAYAAAAbBi9cAAAABHNCSVQICAgIfAhkiAAAAZZJREFUOE+V00soRFEcx3EjJPIq5JWmUCysyEZZkJKVRzZSngslUpIlNVGyIUXJTnnXFMojMhSFDdYWstCUBXklUr6/OrfOTDNTTn06d+7539+cc8+5rqjILZnhFlOyQf+GKvSgEfU41bgrQk4sY1f4NjUp9NFIwyNKsen8UaSgCooOkGGCnugnMIMTXKML+fCHCiowBZ30Weg2QXP0buTgDHnQcn3w2EF6aBmV2MYiEjEN1fXDiwXEoQPNZtxtB41xcxR12DezUKcgtUE0YQnHuEMM+jDrBOnGA96haWtZTrODtJQSHFrjRVxXO0HOFPWPepG5eDbFdlAt97YwiRtkYgReJ+iIHz54cIEVOAF2kLJr0Avt5hd2MK+gMlxCL9mPVrSjHDqAwUFmooGdgn5M8q81FM/1Hhr+E3RO8S0GoFOcDe3aGsb/E1RIsc5HMT6QhHWzPJ2XKTPTYXrtatilOQM6qToGr0jAKvTe7Kaj0Yb74LRw39ouhZ8Ywot5KJVe254O7VxACxekU6tvLlTTzuo9BrQ/mSFULe3tgZYAAAAASUVORK5CYII="/>
+                                </svg>
+                                <span>К сравнению(5)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter_img">
+                        <div class="filter_img-item">
+                            <img src="assets/img/first_product.jpg" alt="Товар №1" class="product_in-basket">
+                        </div>
+                        <div class="filter_img-item">
+                            <img src="assets/img/second_product.jpg" alt="Товар №2" class="product_in-basket">
+                        </div>
+                        <div class="filter_img-item">
+                            <img src="assets/img/third_product.jpg" alt="Товар №3" class="product_in-basket">
+                        </div>
+                    </div>
+                    <div class="header_info">
+                        <div class="working_hours">
+                            <span class="bold">Время работы:</span>
+                            <span>10:00 - 19:00</span>
+                        </div>
+                        <a href="tel:8495721-25-25" class="phone_connect bold">8 495 721-25-25</a>
+                        <div class="choose_of-city">
+                            <div class="choose_city">Москва</div>
+                            <div class="list_of-cities">
+<!--                                <ul>-->
+<!--                                    <li>Москва</li>-->
+<!--                                    <li>Санкт-Петербург</li>-->
+<!--                                    <li>Казань</li>-->
+<!--                                    <li>Екатеринбург</li>-->
+<!--                                    <li>Саратов</li>-->
+<!--                                    <li>Ростов</li>-->
+<!--                                    <li>Краснодар</li>-->
+<!--                                    <li>Красноярск</li>-->
+<!--                                </ul>-->
+                                <div class="choice">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7.2" height="8.1" viewBox="0 0 7.2 8.1">
+                                        <path id="Polygon_2" data-name="Polygon 2" d="M1252.6,142.5l-7.2,4.05v-8.1Z" transform="translate(-1245.4 -138.45)" fill="#333"/>
+                                    </svg>
+                                    <span>сменить</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_nav">
+            <div class="header_nav-search BG_yellow">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="19" viewBox="0 0 19 19">
+                    <image id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" width="19" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAABHNCSVQICAgIfAhkiAAAATJJREFUOE+1kyFvwkAYhlczORL2L0gQpPhVLwhwuEkcEgvY4aY2Q0IyMRQGgwOFwZHwLyBAUDPd85Jr05YeUMIuedPL3fs933vX1vF9/yEYZQbzCvJQ0awveU7ReMEIzSkTJ4DBabDfRAVLwYr1D3hfNuARZkDvmJ6Quo9NGtUppdIq9R61bEDHdV2ZBiaRuqq7UoSDZkqr1Eqvvbe0IwvWYbNtEskUAwVEA1RTNe/iU11sCDZl5QV1MHSThkRCNRVkhtdLg61ZzCMPw+wCTE3VfIP3+d9hdz3mXV/AtZ/GN3dUQlv0yp3NT+4s40cb1I+Y1AH+RoFZfqcdhblI8QkwhMl04UefYGmhqg0Yg537xkyzR55DGzATLAL8YV5LJswMOwPs3wSzAA83wyLAT3Pk3h94kLVb8d9btwAAAABJRU5ErkJggg=="/>
+                </svg>
+            </div>
+
+            <div class="header_nav-list bold">
+                <ul>
+                    <li><a href="Перфараторы">Перфараторы</a></li>
+                    <li><a href="Дрели">Дрели</a></li>
+                    <li><a href="Шлифмашины">Шлифмашины</a></li>
+                    <li><a href="Пистолеты">Пистолеты</a></li>
+                    <li><a href="Электропилы">Электропилы</a></li>
+                    <li><a href="Наборы инструментов">Наборы инструментов</a></li>
+                    <li><a href="Аксессуары">Аксессуары</a></li>
+                </ul>
+            </div>
+            <div class="sale BG_yellow">
+                <a href="Распродажа">Распродажа</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
