@@ -63,9 +63,13 @@ body{
 }
 
 .header_content, .header_nav, .navigation, .header_body{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .header_content{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .header_content-logo{
@@ -81,6 +85,8 @@ body{
 
 .navigation{
     border-bottom: 1px solid #D7D7D7;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-bottom: 7.2px;
 }
@@ -92,6 +98,8 @@ body{
     margin-right: 0px;
 }
 nav ul, .authorization{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     cursor: pointer;
 }
@@ -139,6 +147,8 @@ nav ul, .authorization{
     padding-right: 10px;
 }
 .filter_img{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: 30px;
 }
@@ -146,8 +156,14 @@ nav ul, .authorization{
     border: 1px solid #D9D9D9;
     width: 72px;
     height: 72px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-right: 12px;
 }
@@ -164,16 +180,26 @@ nav ul, .authorization{
     display: block;
 }
 .working_hours{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .choose_of-city, .list_of-cities{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .choose_of-city{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between
 }
 /*.list_of-cities ul{*/
@@ -191,16 +217,22 @@ nav ul, .authorization{
 }
 /*Навигация по продуктам*/
 .header_nav-list ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .header_nav-list ul li{
     padding: 8px 20px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
     color: #fff;
 }
 
 .header_nav-list ul li:hover{
     background: #FFCC00;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
     color: #000;
 }
@@ -208,7 +240,10 @@ nav ul, .authorization{
     font-family: 'roboto-bold';
     border: none;
     border-radius: 33px;
+    -webkit-box-shadow:0px 2px 6px #707070ed;
     box-shadow:0px 2px 6px #707070ed;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     max-height: 34px;
     font-size: .875rem;
@@ -223,14 +258,24 @@ nav ul, .authorization{
     background: #FFCC00;
     border: none;
     width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
 }
 .sale {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 0 10px;
     text-transform: uppercase;
